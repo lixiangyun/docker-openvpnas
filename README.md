@@ -35,7 +35,7 @@ or
 groupadd vpn -g 1001 
 useradd -u 1001 -g vpn -m vpn
 docker run -d --net=host --name=openvpn-as --cap-add=NET_ADMIN -v /root/vpncfg:/config \
--e PGID=1001 -e PUID=1001 linuxserver/openvpn-as
+-e PGID=1001 -e PUID=1001 linimbus/openvpn
 ```
 
 ```
